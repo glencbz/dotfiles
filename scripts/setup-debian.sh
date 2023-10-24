@@ -39,3 +39,5 @@ if ! [[ -e ~/.oh-my-zsh ]]; then
     curl -sS https://starship.rs/install.sh | sh
     cp ../files/.zshrc ~
 fi
+
+sudo apt-get install autojump fzf

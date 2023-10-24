@@ -1,0 +1,22 @@
+{
+    "window.zoomLevel": 1,
+    "git.autofetch": true,
+    "explorer.confirmDragAndDrop": false,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["f", "d"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "e", "n"],
+            "commands": ["editor.action.marker.next"]
+        },
+        {
+            "before": ["<leader>", "e", "p"],
+            "commands": ["editor.action.marker.prev"]
+        }
+    ],
+    "vim.leader": "<space>", 
+}

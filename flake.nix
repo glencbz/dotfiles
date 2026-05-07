@@ -29,9 +29,18 @@
       # Used for backwards compatibility, please read the changelog before changing.
       # $ darwin-rebuild changelog
       system.stateVersion = 6;
+      system.primaryUser = "glen";
 
       # The platform the configuration will be used on.
       nixpkgs.hostPlatform = "x86_64-darwin";
+      
+      homebrew = {
+        enable = true;
+        casks =
+        [
+          "nikitabobko/tap/aerospace@0.12.0"
+        ];
+      };
     };
   in
   {

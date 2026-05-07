@@ -2,12 +2,16 @@
   description = "Example nix-darwin system flake";
 
   inputs = {
+    # Stable track for most things
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-25.11-darwin";
     nix-darwin.url = "github:nix-darwin/nix-darwin/nix-darwin-25.11";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
+
+    # Unstable track
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nixpkgs-unstable }:
   let
     configuration = { pkgs, ... }: {
       # List packages installed in system profile. To search by name, run:
@@ -19,9 +23,9 @@
           pkgs.starship
           pkgs.nodejs
           pkgs.fzf
-          pkgs.jujutsu
-          pkgs.just
           pkgs.jjui
+          nixpkgs-unstable.legacyPackages.${pkgs.system}.just
+          nixpkgs-unstable.legacyPackages.${pkgs.system}.jujutsu
         ];
 
       fonts.packages = 

@@ -18,6 +18,7 @@
           pkgs.fd
           pkgs.starship
           pkgs.fzf
+          pkgs.jujutsu
         ];
 
       fonts.packages = 

@@ -20,6 +20,7 @@
           pkgs.nodejs
           pkgs.fzf
           pkgs.jujutsu
+          pkgs.just
         ];
 
       fonts.packages = 

@@ -17,6 +17,7 @@
           pkgs.neovim
           pkgs.fd
           pkgs.starship
+          pkgs.nodejs
           pkgs.fzf
           pkgs.jujutsu
         ];

@@ -15,7 +15,14 @@
       environment.systemPackages =
         [ pkgs.vim
           pkgs.neovim
+          pkgs.fd
         ];
+
+      fonts.packages = 
+      [
+        pkgs.nerd-fonts.jetbrains-mono
+        pkgs.nerd-fonts.fira-code
+      ];
 
       # Necessary for using flakes on this system.
       nix.settings.experimental-features = "nix-command flakes";

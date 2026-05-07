@@ -21,6 +21,7 @@
           pkgs.fzf
           pkgs.jujutsu
           pkgs.just
+          pkgs.jjui
         ];
 
       fonts.packages = 

@@ -76,5 +76,4 @@ EDITOR=nvim
 
 eval "$(starship init zsh)"
 alias nixreload="sudo darwin-rebuild switch"
-# source <(COMPLETE=zsh jj)
 

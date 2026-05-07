@@ -1,3 +1,3 @@
 # Symlink nix-darwin into the expected location
 setup:
-  sudo ln -s "$(realpath ".")" /etc/nix-darwin
+  sudo ln -sf "$(realpath ".")" /etc/nix-darwin

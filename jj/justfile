@@ -1,3 +1,3 @@
 @setup:
   mkdir -p ~/.config/jj
-  ln -s "$(pwd)/config.toml" ~/.config/jj/config.toml
+  ln -sf "$(pwd)/config.toml" ~/.config/jj/config.toml

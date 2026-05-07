@@ -16,6 +16,8 @@
         [ pkgs.vim
           pkgs.neovim
           pkgs.fd
+          pkgs.starship
+          pkgs.fzf
         ];
 
       fonts.packages = 

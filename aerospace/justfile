@@ -1,0 +1,4 @@
+setup:
+  mkdir -p ~/.config/aerospace
+  ln -sf "$(pwd)/aerospace.toml" ~/.config/aerospace/aerospace.toml
+  aerospace reload-config

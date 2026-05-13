@@ -24,6 +24,7 @@
           pkgs.nodejs
           pkgs.fzf
           pkgs.jjui
+          pkgs.iterm2
           nixpkgs-unstable.legacyPackages.${pkgs.system}.just
           nixpkgs-unstable.legacyPackages.${pkgs.system}.jujutsu
         ];
@@ -53,6 +54,10 @@
       
       homebrew = {
         enable = true;
+        brews =
+        [
+          "autojump"
+        ];
         casks =
         [
           "nikitabobko/tap/aerospace@0.12.0"

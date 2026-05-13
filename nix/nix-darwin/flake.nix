@@ -25,6 +25,7 @@
           pkgs.fzf
           pkgs.jjui
           pkgs.iterm2
+          pkgs.tmux
           nixpkgs-unstable.legacyPackages.${pkgs.system}.just
           nixpkgs-unstable.legacyPackages.${pkgs.system}.jujutsu
         ];
